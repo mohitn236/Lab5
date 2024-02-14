@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang =" en ">
+<head>
+    <meta charset =" UTF -8" >
+    <meta name =" viewport " content =" width = device - width , initial -
+        scale =1.0" >
+    <title > JavaScript String and Vari able Exercise </title >
+</head>
+<body>
+    <!--Content goes here-->
+<!--JavaScript will be linked here -->
+    <script>
+        // concatenate strings
+        let firstName = " Mohit";
+        let lastName = " Narula";
+        let age = 19;
+        let fullName = firstName + "" + lastName;
+        console.log(fullName);
+
+        // calculating birth year
+
+        let currentYear = new Date ().getFullYear();
+        let birthYear = currentYear - age;
+        console.log(birthYear);
+        // string manupulation
+
+        console.log(fullName.length);
+        console.log(fullName.toUpperCase());
+        //Template Literals
+
+        console.log(`Hello, my name is ${fullName} and I am ${age} years old. I was born in $ {birthYear}.`);
+        // conditional opp
+        let canVote = age > 18 ? true : false;
+        console.log(`I am eligible to vote : ${canVote}`);
+    </script>
+</body>
+</html>
